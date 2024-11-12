@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
 
     public float speed = 5f;
     public float jumpPower = 10f;
-    private int jumpCount = 0;
+    public int jumpCount = 0;
     private const int maxJumps = 2;
 
     //  public bool isGrounded = false;
