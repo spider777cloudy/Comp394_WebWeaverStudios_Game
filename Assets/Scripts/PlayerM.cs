@@ -5,11 +5,13 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator animator;
+    public bool isGrounded;
+
 
     public float speed = 5f;
     public float jumpPower = 10f;
 
-  //  public bool isGrounded = false;
+    //  public bool isGrounded = false;
 
     private void Awake()
     {
@@ -25,6 +27,33 @@ public class Movement : MonoBehaviour
         FlipX();
     }
 
+    void OnCollisionStay()
+    {
+        isGrounded = true;
+    }
+    void OnCollisionExit()
+    {
+        isGrounded = false;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        //if (other.gameObject.tag == "Trap")
+        //{
+        //    GameManager.health -= 1;
+        //}
+
+        //if (other.gameObject.tag == "Potion")
+        //{
+        //    GameManager.health -= 1;
+        //}
+
+        if (other.gameObject.tag == "Coin")
+        {
+            ScoreManager.scoreCount += 1;
+        }
+    }
+
     #region METHODS
     private void MovementPlayer()
     {
@@ -36,23 +65,25 @@ public class Movement : MonoBehaviour
         if (moveInput != 0)
         {
             animator.SetTrigger("Walk");
+            isGrounded = true;
         }
         else
         {
             animator.SetTrigger("Idle");
+            isGrounded = true;
         }
     }
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") )
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
+            isGrounded = false;
         }
         if (Input.GetButtonUp("Jump"))
         {
-           
             animator.SetTrigger("Idle");
         }
     }
@@ -70,6 +101,6 @@ public class Movement : MonoBehaviour
         }
     }
 
-   
+
     #endregion
 }

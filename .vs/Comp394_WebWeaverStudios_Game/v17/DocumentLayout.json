@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\playerm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\playercontroller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerM.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\PlayerM.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerM.cs",
+              "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\PlayerM.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerM.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wCgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T01:52:37.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController2D.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\PlayerController2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController2D.cs",
+              "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\PlayerController2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController2D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T01:51:51.273Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
