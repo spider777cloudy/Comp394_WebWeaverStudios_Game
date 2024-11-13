@@ -26,8 +26,22 @@ public class PlayerController : MonoBehaviour
         // Increase timer that controls attack combo
         m_timeSinceAttack += Time.deltaTime;
 
+        float inputX = Input.GetAxis("Horizontal");
+
         Vector3 attackPointFront = new Vector3(0.3f, 0, 0);
         Vector3 attackPointBack = new Vector3(-0.3f, 0, 0);
+
+        // Swap direction of sprite depending on walk direction
+        if (inputX > 0)
+        {
+            m_attackPoint.localPosition = attackPointFront;
+        }
+
+        else if (inputX < 0)
+        {
+            m_attackPoint.localPosition = attackPointBack;
+        }
+
 
         if (Input.GetMouseButtonDown(0) && m_timeSinceAttack > 0.25f)
         {
