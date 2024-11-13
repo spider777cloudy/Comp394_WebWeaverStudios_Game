@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\playercontroller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\player\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,20 +42,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenuController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\MainMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\MainMenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T19:54:03.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwHkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T19:49:16.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GameOverManager.cs",
               "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\GameOverManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
               "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\GameOverManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameOverManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwCsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T16:28:34.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Player\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement.cs",
@@ -59,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Timer.cs",
               "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Timer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timer.cs",
@@ -72,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerController2D.cs",
               "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\PlayerController2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController2D.cs",
@@ -80,8 +114,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerController2D.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAgwAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T01:51:51.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T01:51:51.273Z"
             }
           ]
         }
