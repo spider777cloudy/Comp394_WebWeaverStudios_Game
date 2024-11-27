@@ -23,9 +23,18 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void LoadL2()
+    {
+        SceneManager.LoadScene(" [2] SCENE_VM");
+    }
+
+
     public void ExitGame()
     {
         Application.Quit();
         Debug.Log("Game is exiting"); 
     }
+   
+
+
 }

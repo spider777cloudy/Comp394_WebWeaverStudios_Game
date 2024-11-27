@@ -43,7 +43,7 @@ public class MeleeAttack : MonoBehaviour
         Debug.Log("Enemy Attacking!");
 
         // Apply damage to the player
-        
+
         player.GetComponent<HPStats>().TakeDamage(attackDmg);
         player.GetComponent<PlayerController>().TakeDamageAnim();
 

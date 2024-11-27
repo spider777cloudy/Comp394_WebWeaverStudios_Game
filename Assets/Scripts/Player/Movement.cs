@@ -98,6 +98,8 @@ public class Movement : MonoBehaviour
             jumpCount = 0;
             m_animator.SetBool("Grounded", m_grounded);
         }
+
+
     }
 
     private void Jump()
@@ -120,6 +122,16 @@ public class Movement : MonoBehaviour
         {
             m_animator.SetTrigger("Idle");
         }
+    }
+
+    public void OnJumpButtonPressed()
+    {
+        // Ensure the player can only jump if grounded
+
+        rb.velocity = new Vector2(rb.velocity.x, jumpPower); // Apply vertical force
+        m_animator.SetTrigger("Jump");
+        m_grounded = false; // Set grounded to false until landing
+
     }
 
     private void FlipX()

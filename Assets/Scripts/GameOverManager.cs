@@ -32,6 +32,8 @@ public class GameOverManager : MonoBehaviour
         {
             Debug.LogError("ShowGameOverScreen: gameOverText is not assigned!");
         }
+
+        SceneManager.LoadScene("[2]SCENE_VM");
     }
 
     public void LoadLevel01()
