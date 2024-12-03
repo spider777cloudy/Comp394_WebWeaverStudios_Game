@@ -22,6 +22,8 @@ public class GameOverManager : MonoBehaviour
         ShowGameOverScreen(playerWon);
     }
 
+    
+
     public void ShowGameOverScreen(bool won)
     {
         if (gameOverText != null)
@@ -41,8 +43,41 @@ public class GameOverManager : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
+    public void LoadLevel02()
+    {
+        SceneManager.LoadScene("[2]SCENE_VM");
+    }
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log($"Collision detected with: {collision.gameObject.name} (Tag: {collision.gameObject.tag})");
+        // Check if the colliding object has the tag "level2"
+        if (collision.gameObject.CompareTag("levelp"))
+        {
+            Debug.Log("Collided with Level 2 trigger!");
+            LoadLevel02();
+        }
+    }
+
+    // Optional: Use OnTriggerEnter if the GameObject uses a trigger collider
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log($"Trigger detected with: {other.gameObject.name} (Tag: {other.gameObject.tag})");
+        // Check if the triggering object has the tag "level2"
+        if (other.gameObject.CompareTag("levelp"))
+        {
+            Debug.Log("Entered Level 2 trigger!");
+            LoadLevel02();
+        }
+        if (other.gameObject.CompareTag("level1"))
+        {
+            Debug.Log("Entered Level 2 trigger!");
+            LoadLevel01();
+        }
+    }
+
 }

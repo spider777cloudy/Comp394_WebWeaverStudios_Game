@@ -7,19 +7,23 @@
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\unity projects\\comp394_webweaverstudios_game\\assets\\scripts\\background\\uigamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\background\\uigamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\background\\uigamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\assets\\script\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\assets\\scenes\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\unity projects\\comp394_webweaverstudios_game\\assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\unity projects\\comp394_webweaverstudios_game\\assets\\scripts\\camera follow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\assets\\scripts\\camera follow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera follow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +42,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Script\\StartMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StartMenu.cs",
+              "ToolTip": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Script\\StartMenu.cs",
+              "RelativeToolTip": "Assets\\Script\\StartMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T05:27:14.887Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,14 +64,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
               "ToolTip": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\GameOverManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameOverManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAE4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T05:09:12.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UIGameController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Background\\UIGameController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Background\\UIGameController.cs",
@@ -63,25 +79,23 @@
               "RelativeToolTip": "Assets\\Scripts\\Background\\UIGameController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T05:08:56.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T05:08:56.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainMenuController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\MainMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuController.cs",
               "ToolTip": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\MainMenuController.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T05:05:30.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T05:05:30.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Camera Follow.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scripts\\Camera Follow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera Follow.cs",
@@ -89,12 +103,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Camera Follow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T03:11:27.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T03:11:27.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Portal.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scenes\\Portal.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Portal.cs",
@@ -106,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Scenes\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\MainMenu.cs",
@@ -114,12 +127,11 @@
               "RelativeToolTip": "Assets\\Scenes\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:05:36.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:05:36.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PortalController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Comp394_WebWeaverStudios_Game\\Assets\\Script\\PortalController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PortalController.cs",

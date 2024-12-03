@@ -8,6 +8,11 @@ TagManager:
   - Trap
   - End
   - Enemy
+  - Portal4
+  - Portal3
+  - level2
+  - levelp
+  - level1
   layers:
   - Default
   - TransparentFX
