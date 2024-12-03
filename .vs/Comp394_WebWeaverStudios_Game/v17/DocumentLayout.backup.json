@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scenes\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\scenes\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\script\\portalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|d:\\semester 4\\webweaverproject\\comp394_webweaverstudios_game\\assets\\scenes\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\assets\\script\\portalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11DF8D96-5168-0E5F-2A89-D535E72F5C3D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\portalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Portal.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scenes\\Portal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Portal.cs",
+              "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scenes\\Portal.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Portal.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:06:57.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "Assets\\Scenes\\MainMenu.cs",
               "ToolTip": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Scenes\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scenes\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T18:05:36.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PortalController.cs",
               "DocumentMoniker": "D:\\SEMESTER 4\\WEBWEAVERPROJECT\\Comp394_WebWeaverStudios_Game\\Assets\\Script\\PortalController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PortalController.cs",
@@ -47,8 +64,7 @@
               "RelativeToolTip": "Assets\\Script\\PortalController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwC4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T17:40:49.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T17:40:49.833Z"
             }
           ]
         }
