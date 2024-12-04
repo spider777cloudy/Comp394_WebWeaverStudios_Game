@@ -1,34 +1,77 @@
-using System.Collections;
-using System.Collections.Generic;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.UI;
+
+//public class ScoreManager : MonoBehaviour
+//{
+//    public Text scoreText;
+//    public Text hiScoreText;
+//    public static int scoreCount;
+//    public static int hiScoreCount;
+
+
+//    // Start is called before the first frame update
+//    void Start()
+//    {
+//        if (PlayerPrefs.HasKey("HighScore"))
+//        {
+//            hiScoreCount = PlayerPrefs.GetInt("HiScore");
+//        }
+//    }
+
+//    // Update is called once per frame
+//    void Update()
+//    {
+//        if(scoreCount>hiScoreCount)
+//        {
+//            hiScoreCount = scoreCount;
+//            PlayerPrefs.SetInt("HighScore", hiScoreCount);
+//        }
+//        scoreText.text = "SCORE: " + scoreCount;
+//        hiScoreText.text = "HI-SCORE: " + hiScoreCount;
+//    }
+//}
+
+
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Include this for Text component
 
 public class ScoreManager : MonoBehaviour
 {
-    public Text scoreText;
-    public Text hiScoreText;
-    public static int scoreCount;
-    public static int hiScoreCount;
+    public static ScoreManager Instance; // Singleton instance
+    private int score;
 
+    [SerializeField] private Text scoreText; // Reference to the UI Text element
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        if (PlayerPrefs.HasKey("HighScore"))
+        // Ensure there is only one instance of ScoreManager
+        if (Instance == null)
         {
-            hiScoreCount = PlayerPrefs.GetInt("HiScore");
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Keep this object between scenes
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore(int amount)
     {
-        if(scoreCount>hiScoreCount)
+        score += amount;
+        Debug.Log($"Score: {score}");
+
+        // Update the UI text with the new score
+        if (scoreText != null)
         {
-            hiScoreCount = scoreCount;
-            PlayerPrefs.SetInt("HighScore", hiScoreCount);
+            scoreText.text = "Score: " + score.ToString();
         }
-        scoreText.text = "SCORE: " + scoreCount;
-        hiScoreText.text = "HI-SCORE: " + hiScoreCount;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }

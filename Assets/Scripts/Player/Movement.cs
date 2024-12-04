@@ -73,7 +73,7 @@ public class Movement : MonoBehaviour
 
         if (other.gameObject.tag == "Coin")
         {
-            ScoreManager.scoreCount += 1;
+           // ScoreManager.scoreCount += 1;
         }
     }
 

@@ -11,6 +11,7 @@ public class EnemyAI2 : MonoBehaviour
 
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
+    public float detectionRadius = 10f;
 
 
     public Transform enemyGFX;
@@ -34,8 +35,19 @@ public class EnemyAI2 : MonoBehaviour
 
     void UpdatePath()
     {
-        if (seeker.IsDone())
-            seeker.StartPath(rb.position, target.position, OnPathComplete);
+        //if (seeker.IsDone())
+        //    seeker.StartPath(rb.position, target.position, OnPathComplete);
+
+
+        if (target != null && Vector2.Distance(rb.position, target.position) <= detectionRadius)
+        {
+            if (seeker.IsDone())
+                seeker.StartPath(rb.position, target.position, OnPathComplete);
+        }
+        else
+        {
+            path = null; // Clear the path if the player is out of range
+        }
     }
 
     void OnPathComplete(Path p)
@@ -87,5 +99,12 @@ public class EnemyAI2 : MonoBehaviour
         }
 
 
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Draw the detection radius in the editor for visualization
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }
