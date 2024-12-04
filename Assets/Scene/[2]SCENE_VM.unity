@@ -21448,6 +21448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 5
   maxHealth: 20
+  scoreValue: 5
 --- !u!1001 &684758734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54547,6 +54548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 5
   maxHealth: 20
+  scoreValue: 5
 --- !u!1 &1074355490
 GameObject:
   m_ObjectHideFlags: 0
@@ -55485,7 +55487,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1617796550, guid: 1032dc759d9fd9141a78eb0c84dee6df, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.37556124, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -74238,6 +74240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 5
   maxHealth: 20
+  scoreValue: 5
 --- !u!1 &1443179587
 GameObject:
   m_ObjectHideFlags: 0
@@ -107129,7 +107132,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1617796550, guid: 1032dc759d9fd9141a78eb0c84dee6df, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.03415597, g: 0.908051, b: 0.98742133, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -10,7 +10,7 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadLevel02()
     {
-        SceneManager.LoadScene("Level02");
+        SceneManager.LoadScene("New Scene");
     }
 
     public void LoadOptions()

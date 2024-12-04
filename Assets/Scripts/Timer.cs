@@ -7,9 +7,17 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
+    [SerializeField] float defaultTime = 60f; // Default time set in Inspector
+    private float remainingTime;
     [SerializeField] GameOverManager gameOverManager;
     private bool isGameOverTriggered = false; // Prevent multiple calls
+
+    void Start()
+    {
+        // Reset timer to default value at the start of the scene
+        ResetTimer();
+        UpdateTimerText();
+    }
 
     void Update()
     {
@@ -31,16 +39,51 @@ public class Timer : MonoBehaviour
         }
 
         // Update timer text display
+        UpdateTimerText();
+    }
+
+    private void TriggerGameOver(bool won)
+    {
+        if (!isGameOverTriggered)
+        {
+            isGameOverTriggered = true; // Prevent multiple calls
+            PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
+            PlayerPrefs.SetInt("PlayerWon", won ? 1 : 0);
+            SceneManager.LoadScene("GameOverScene");
+        }
+    }
+
+    private void ResetTimer()
+    {
+        remainingTime = defaultTime;
+        timerText.color = Color.white; // Reset color to default
+    }
+
+    private void UpdateTimerText()
+    {
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    private void TriggerGameOver(bool won)
+    // Ensure the timer resets when the scene reloads
+    private void OnEnable()
     {
-        // Set player win/loss state and load GameOver scene
-        PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetInt("PlayerWon", won ? 1 : 0);
-        SceneManager.LoadScene("GameOverScene");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        //GameObject canvas = GameObject.Find("Canvas");
+        //if (canvas != null)
+        //{
+        //    canvas.SetActive(true);
+        //}
+        ResetTimer();
     }
 }

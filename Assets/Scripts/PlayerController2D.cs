@@ -39,6 +39,7 @@ public class PlayerController2D : MonoBehaviour
     private void TriggerGameOver(bool won)
     {
         // Set player win/loss state and load GameOver scene
+
         PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
         PlayerPrefs.SetInt("PlayerWon", won ? 1 : 0);
         SceneManager.LoadScene("GameOverScene");
