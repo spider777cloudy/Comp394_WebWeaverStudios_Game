@@ -7,18 +7,19 @@ namespace Enemy.AI
 {
     public class EnemyAI : MonoBehaviour
     {
-        [SerializeField] float moveSpeed = 2f;        // Speed of enemy movement
-        [SerializeField] float followSpeed = 3f;      // Speed of enemy when following player
-        [SerializeField] float patrolPointA;          // Patrol point A (left)
-        [SerializeField] float patrolPointB;          // Patrol point B (right)
-        [SerializeField] float detectionRadius = 5f;  // Radius within which enemy detects player
-        [SerializeField] float attackRadius = 1f;     // Distance from player where enemy attacks
+        [SerializeField] float moveSpeed = 2f;
+        [SerializeField] float followSpeed = 3f;
+        [SerializeField] float patrolPointA;
+        [SerializeField] float patrolPointB;
+        [SerializeField] float detectionRadius = 5f;
+        [SerializeField] float attackRadius = 1f;
         [SerializeField] Transform m_attackPoint;
+        [SerializeField] int scoreValue = 10; // Points awarded for killing this enemy
 
-        private bool movingRight = true;    // Direction of enemy
-        private Transform player;           // Reference to the player
-        private bool playerInRange = false; // Whether player is within detection radius
-        public bool isAttacking = false;   // Whether enemy is attacking
+        private bool movingRight = true;
+        private Transform player;
+        private bool playerInRange = false;
+        public bool isAttacking = false;
 
         public Rigidbody2D rb;
 
@@ -27,6 +28,7 @@ namespace Enemy.AI
             rb = GetComponent<Rigidbody2D>();
             player = GameObject.FindGameObjectWithTag("Player").transform;
 
+            // Subscribe to death event
             GetComponent<HPStats>().OnDeath += OnDeath;
         }
 
@@ -36,34 +38,17 @@ namespace Enemy.AI
             {
                 Patrol();
                 DetectPlayer();
+
                 if (playerInRange && !isAttacking)
                 {
                     FollowPlayer();
                 }
 
-                if (movingRight)
-                {
-                    GetComponent<SpriteRenderer>().flipX = false;
-                }
-                else
-                {
-                    GetComponent<SpriteRenderer>().flipX = true;
-                }
-
-                if (!GetComponent<SpriteRenderer>().flipX)
-                {
-                    Vector3 attackPointFront = new Vector3(0.87f, 0.12f, 0);
-                    m_attackPoint.localPosition = attackPointFront;
-                }
-                else
-                {
-                    Vector3 attackPointBack = new Vector3(-0.87f, 0.12f, 0);
-                    m_attackPoint.localPosition = attackPointBack;
-                }
+                UpdateSpriteFlip();
+                UpdateAttackPointPosition();
             }
         }
 
-        // Patrol between two points
         void Patrol()
         {
             if (!playerInRange)
@@ -84,21 +69,12 @@ namespace Enemy.AI
             }
         }
 
-        // Detect player within radius
         void DetectPlayer()
         {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-            if (distanceToPlayer <= detectionRadius)
-            {
-                playerInRange = true;
-            }
-            else
-            {
-                playerInRange = false;
-            }
+            playerInRange = distanceToPlayer <= detectionRadius;
         }
 
-        // Follow the player when detected
         void FollowPlayer()
         {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -106,16 +82,11 @@ namespace Enemy.AI
             if (distanceToPlayer > attackRadius)
             {
                 isAttacking = false;
-                if (player.position.x > transform.position.x)
-                {
-                    rb.velocity = new Vector2(followSpeed, rb.velocity.y);
-                    movingRight = true;
-                }
-                else
-                {
-                    rb.velocity = new Vector2(-followSpeed, rb.velocity.y);
-                    movingRight = false;
-                }
+                rb.velocity = new Vector2(
+                    player.position.x > transform.position.x ? followSpeed : -followSpeed,
+                    rb.velocity.y
+                );
+                movingRight = player.position.x > transform.position.x;
             }
             else
             {
@@ -123,8 +94,27 @@ namespace Enemy.AI
             }
         }
 
+        void UpdateSpriteFlip()
+        {
+            var spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.flipX = !movingRight;
+        }
+
+        void UpdateAttackPointPosition()
+        {
+            m_attackPoint.localPosition = GetComponent<SpriteRenderer>().flipX
+                ? new Vector3(-0.87f, 0.12f, 0)
+                : new Vector3(0.87f, 0.12f, 0);
+        }
+
         void OnDeath()
         {
+            // Notify the ScoreManager to add points
+            if (ScoreManager.Instance != null)
+            {
+                ScoreManager.Instance.AddScore(scoreValue);
+            }
+
             Destroy(gameObject);
         }
 
@@ -133,7 +123,6 @@ namespace Enemy.AI
             GetComponent<HPStats>().OnDeath -= OnDeath;
         }
 
-        // Optional Gizmos to visualize patrol points and detection radius in the editor
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
